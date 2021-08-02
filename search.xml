@@ -18,4 +18,90 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>Hexo-Theme-NexT主题配置</title>
+    <url>/2021/08/02/nexttheme/</url>
+    <content><![CDATA[<h1 id="Hexo-Theme-NexT主题配置"><a href="#Hexo-Theme-NexT主题配置" class="headerlink" title="Hexo-Theme-NexT主题配置"></a>Hexo-Theme-NexT主题配置</h1><p> 2020-08-02 版本信息</p>
+<blockquote>
+<p>nodejs : v12.18.3</p>
+<p>hexo: 5.0.0<br>hexo-cli: 4.1.0</p>
+<p>NexT : <a href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.5">v8.0.0-rc.5</a></p>
+</blockquote>
+<h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><p><a href="https://i.loli.net/2020/08/03/IFlo6fVkXJ8HpUv.png"><img src="https://i.loli.net/2020/08/03/IFlo6fVkXJ8HpUv.png" alt="Next主题首页截图.png"></a></p>
+<p><a href="https://i.loli.net/2020/08/03/IFlo6fVkXJ8HpUv.png">Next主题首页截图.png</a></p>
+<p><a href="https://i.loli.net/2020/08/03/X1WITxsLjgeuSpK.png"><img src="https://i.loli.net/2020/08/03/X1WITxsLjgeuSpK.png" alt="Next主题博客界面截图.png"></a></p>
+<p><a href="https://i.loli.net/2020/08/03/X1WITxsLjgeuSpK.png">Next主题博客界面截图.png</a></p>
+<h1 id="获取Next"><a href="#获取Next" class="headerlink" title="获取Next"></a>获取Next</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<h1 id="站点配置文件"><a href="#站点配置文件" class="headerlink" title="站点配置文件"></a>站点配置文件</h1><p>根目录 <code>_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<h1 id="Next主题配置"><a href="#Next主题配置" class="headerlink" title="Next主题配置"></a>Next主题配置</h1><h2 id="主题配置文件"><a href="#主题配置文件" class="headerlink" title="主题配置文件"></a>主题配置文件</h2><p>将主题配置文件放在 <code>网站很目录</code> 下，命名为 <code>_config.next.yml</code> ，详情见：<a href="https://theme-next.js.org/docs/getting-started/configuration">Configuration</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp themes/next/_config.yml ./_config.next.yml</span><br></pre></td></tr></table></figure>
+
+<h2 id="选择主题风格"><a href="#选择主题风格" class="headerlink" title="选择主题风格"></a>选择主题风格</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">#scheme: Muse   #预览参考 https://theme-next.js.org/muse/</span><br><span class="line">#scheme: Mist     #预览参考 https://theme-next.js.org/mist/</span><br><span class="line">#scheme: Pisces #预览参考 https://theme-next.js.org/pisces/</span><br><span class="line">scheme: Gemini  #预览参考 https://theme-next.js.org/</span><br></pre></td></tr></table></figure>
+
+<h2 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  首页: / || fa fa-home</span><br><span class="line">  归档: /archives/ || fa fa-archive</span><br><span class="line">  分类: /categories/ || fa fa-th</span><br><span class="line">  标签: /tags/ || fa fa-tags</span><br><span class="line"></span><br><span class="line">menu_settings:</span><br><span class="line">  icons: true # 显示图标</span><br><span class="line">  badges: true # 显示统计信息</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加标签页面"><a href="#添加标签页面" class="headerlink" title="添加标签页面"></a>添加标签页面</h3><p>生成编辑<code>Hexo/source/tags/index.md</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2020-07-29</span><br><span class="line">type: tags</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加分类页面"><a href="#添加分类页面" class="headerlink" title="添加分类页面"></a>添加分类页面</h3><p>生成编辑<code>Hexo/source/categories/index.md</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2020-07-29</span><br><span class="line">type: categories</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg #/images/avatar.gif</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: true  </span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
+
+<h2 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Favicon（网站图标）</span><br><span class="line">favicon:</span><br><span class="line">  small: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg</span><br><span class="line">  medium: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg</span><br><span class="line">  apple_touch_icon: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg</span><br><span class="line">  safari_pinned_tab: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg</span><br><span class="line">  #android_manifest: /images/manifest.json</span><br><span class="line">  #ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
+
+<h2 id="社交链接"><a href="#社交链接" class="headerlink" title="社交链接"></a>社交链接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https://github.com/yourname || fab fa-github</span><br><span class="line">  E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span><br><span class="line"></span><br><span class="line">social_icons:</span><br><span class="line">  enable: true      # 显示社交图标</span><br><span class="line">  icons_only: true  # 只显示图标，不显示文字</span><br><span class="line">  transition: false</span><br></pre></td></tr></table></figure>
+
+<h2 id="首页显示的文章属性"><a href="#首页显示的文章属性" class="headerlink" title="首页显示的文章属性"></a>首页显示的文章属性</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_meta:</span><br><span class="line">  item_text: false # 设为true 可以一行显示，文章的所有属性</span><br><span class="line">  created_at: true</span><br><span class="line">  updated_at:</span><br><span class="line">    enable: true   # 显示修改的时间</span><br><span class="line">    another_day: false # 设true时，如果创建时间和修改时间一样则显示一个时间</span><br><span class="line">  categories: true  # 显示分类信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="footer信息"><a href="#footer信息" class="headerlink" title="footer信息"></a>footer信息</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">footer:</span><br><span class="line">  # Specify the date when the site was setup. If not defined, current year will be used.</span><br><span class="line">  since: 2019</span><br><span class="line">  icon:</span><br><span class="line">    name: fa fa-user</span><br><span class="line">    animated: false</span><br><span class="line">    color: &quot;#808080&quot;</span><br><span class="line"></span><br><span class="line">  copyright: false</span><br><span class="line">  # Powered by Hexo &amp; NexT</span><br><span class="line">  powered: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="目录设置"><a href="#目录设置" class="headerlink" title="目录设置"></a>目录设置</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: true</span><br><span class="line">  # Automatically add list number to toc.</span><br><span class="line">  number: true</span><br><span class="line">  # 如果为true，则所有标题将在标题宽度长于边栏宽度的情况下放在下一行。</span><br><span class="line">  wrap: false</span><br><span class="line">  # 如果为true，则将显示帖子中所有级别的TOC，而不是帖子中已激活的部分。</span><br><span class="line">  expand_all: true</span><br><span class="line">  # Maximum heading depth of generated toc.</span><br><span class="line">  max_depth: 6</span><br></pre></td></tr></table></figure>
+
+<h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">reward_settings:</span><br><span class="line">  # If true, reward will be displayed in every article by default.</span><br><span class="line">  enable: true</span><br><span class="line">  animation: false  # 字体转动 鬼畜。。。。</span><br><span class="line">  #comment: Donate comment here.</span><br><span class="line"></span><br><span class="line">reward: # 打赏二维码链接</span><br><span class="line">  wechatpay: https://i.loli.net/2020/08/01/na8BbXF1ow63OIJ.png</span><br><span class="line">  alipay: https://i.loli.net/2020/08/01/NALchOTe3vM8aYy.jpg</span><br></pre></td></tr></table></figure>
+
+<h2 id="文章版权声明"><a href="#文章版权声明" class="headerlink" title="文章版权声明"></a>文章版权声明</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: true</span><br><span class="line">  post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">codeblock:</span><br><span class="line">  # Code Highlight theme</span><br><span class="line">  # All available themes: https://theme-next.js.org/highlight/</span><br><span class="line">  theme:</span><br><span class="line">#    light: default</span><br><span class="line">#    dark: tomorrow-night</span><br><span class="line">    light: atom-one-dark-reasonable</span><br><span class="line">    dark: atom-one-dark-reasonable</span><br><span class="line">  prism:</span><br><span class="line">    # light: prism</span><br><span class="line">    # dark: prism-dark</span><br><span class="line">    light: prism-vsc-dark-plus</span><br><span class="line">    dark: prism-vsc-dark-plus</span><br><span class="line">  # Add copy button on codeblock</span><br><span class="line">  copy_button:</span><br><span class="line">    enable: true # 复制按钮的开关</span><br><span class="line">    # Available values: default | flat | mac</span><br><span class="line">    style: mac</span><br></pre></td></tr></table></figure>
+
+<h2 id="GitHub-Banner"><a href="#GitHub-Banner" class="headerlink" title="GitHub_Banner"></a>GitHub_Banner</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: # 你的GitHub地址</span><br><span class="line">  title: Follow me on GitHub</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置本地搜索"><a href="#配置本地搜索" class="headerlink" title="配置本地搜索"></a>配置本地搜索</h2><p>安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  # If auto, trigger search by changing input.</span><br><span class="line">  # If manual, trigger search by pressing enter key or search button.</span><br><span class="line">  trigger: auto</span><br><span class="line">  # Show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  # Unescape html strings to the readable one.</span><br><span class="line">  unescape: false</span><br><span class="line">  # Preload the search data when the page loads.</span><br><span class="line">  preload: false</span><br></pre></td></tr></table></figure>
+
+<h2 id="busuanzi统计"><a href="#busuanzi统计" class="headerlink" title="busuanzi统计"></a>busuanzi统计</h2><p>安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br><span class="line">busuanzi_count:</span><br><span class="line">  enable: true                     # 设true 开启</span><br><span class="line">  total_visitors: true             # 总阅读人数（uv数）</span><br><span class="line">  total_visitors_icon: fa fa-user  # 阅读总人数的图标</span><br><span class="line">  total_views: true                 # 总阅读次数（pv数）</span><br><span class="line">  total_views_icon: fa fa-eye      # 阅读总次数的图标</span><br><span class="line">  post_views: true                  # 开启内容阅读次数</span><br><span class="line">  post_views_icon: fa fa-eye       # 内容页阅读数的图标</span><br></pre></td></tr></table></figure>
+
+<h2 id="字数统计、阅读时长"><a href="#字数统计、阅读时长" class="headerlink" title="字数统计、阅读时长"></a>字数统计、阅读时长</h2><p>安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-word-counter --save</span><br><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-word-counter</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true # false会显示一行</span><br><span class="line">  item_text_post: true # 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字</span><br><span class="line">  item_text_total: true # 底部footer是否显示字数统计属性文字</span><br></pre></td></tr></table></figure>
+
+<h1 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h1><p>首先在 NexT 的配置文件 <code>_config.next.yml</code> 中取消下列对应样式文件的注释：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  #style: source/_data/styles.styl</span><br></pre></td></tr></table></figure>
+
+<h2 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h2><p>取消 <code>_config.next.yml</code> 中 <code>style: source/_data/styles.styl</code> 注释。</p>
+<p>创建 <code>source/_data/styles.styl</code> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 设置背景图片</span><br><span class="line">body &#123;</span><br><span class="line">    # 图片地址</span><br><span class="line">    background:url(https://i.loli.net/2020/08/02/pjAgE9dIcTZSCoB.jpg);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed; //不重复</span><br><span class="line">    background-size: cover;      //填充</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="设置透明度"><a href="#设置透明度" class="headerlink" title="设置透明度"></a>设置透明度</h2><p><code>source/_data/styles.styl</code> 中增加样式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//博客内容透明化</span><br><span class="line">//文章内容的透明度设置</span><br><span class="line">.content &#123;</span><br><span class="line">  opacity: 0.85;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边框的透明度设置</span><br><span class="line">.sidebar &#123;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//菜单栏的透明度设置</span><br><span class="line">.header-inner &#123;</span><br><span class="line">  background: rgba(255,255,255,0.85);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//搜索框（local-search）的透明度设置</span><br><span class="line">.popup &#123;</span><br><span class="line">  opacity: 0.85;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// sidebar css</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    background-color:transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="圆角设置"><a href="#圆角设置" class="headerlink" title="圆角设置"></a>圆角设置</h2><p>取消 <code>_config.next.yml</code> 中 <code>style: source/_data/variables.styl</code> 注释。</p>
+<p>创建 <code>source/_data/variables.styl</code> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 圆角设置</span><br><span class="line">$border-radius-inner     = 15px 15px 15px 15px;</span><br><span class="line">$border-radius       </span><br></pre></td></tr></table></figure>
+
+<p>相关文章推荐</p>
+<p>-</p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+        <category>保姆级教程</category>
+      </categories>
+      <tags>
+        <tag>NexT</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
