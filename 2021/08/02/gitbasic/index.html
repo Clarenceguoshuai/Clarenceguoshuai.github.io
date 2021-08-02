@@ -20,23 +20,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="DevilAguo0">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="Git基础教程简介 Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。 Git 与常用的版本控制工具 CVS, SVN 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。  SVN 区别点 GIT是分布式的，SVN不是，这是GIT和其它非分布式的版本控制系统，例如SVN，CVS等，最核心的区别。 GIT把内容按元数据方式存储，而SVN是按文件：所有的资源控制系统都">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git基础教程">
+<meta property="og:url" content="http://example.com/2021/08/02/gitbasic/index.html">
 <meta property="og:site_name" content="DevilAguo0">
+<meta property="og:description" content="Git基础教程简介 Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。 Git 与常用的版本控制工具 CVS, SVN 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。  SVN 区别点 GIT是分布式的，SVN不是，这是GIT和其它非分布式的版本控制系统，例如SVN，CVS等，最核心的区别。 GIT把内容按元数据方式存储，而SVN是按文件：所有的资源控制系统都">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8544948-67483d2a9894fdfa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8544948-4a3ff818c8e1d208.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1086/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8544948-f51e38feb6773df8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1152/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8544948-7c747a2d32bcc16c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8544948-8fb94e0048561903.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8544948-5fedabdf15b06358.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8544948-4bc5792bd257b63f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1034/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8544948-3277ec4c5bf75477.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+<meta property="article:published_time" content="2021-08-02T06:10:23.000Z">
+<meta property="article:modified_time" content="2021-08-02T06:12:04.952Z">
 <meta property="article:author" content="DevilAguo0">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/8544948-67483d2a9894fdfa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/08/02/gitbasic/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/08/02/gitbasic/","path":"2021/08/02/gitbasic/","title":"Git基础教程"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>DevilAguo0</title>
+<title>Git基础教程 | DevilAguo0</title>
   
 
 
@@ -128,7 +142,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -141,6 +155,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">Git基础教程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SVN-%E5%8C%BA%E5%88%AB%E7%82%B9"><span class="nav-number">3.</span> <span class="nav-text">SVN 区别点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E7%A7%8D%E4%B8%8D%E5%90%8C%E7%BA%A7%E5%88%AB%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">4.1.</span> <span class="nav-text">三种不同级别的配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF"><span class="nav-number">4.2.</span> <span class="nav-text">设置用户信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%88%AB%E5%90%8D"><span class="nav-number">4.3.</span> <span class="nav-text">设置别名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="nav-number">4.4.</span> <span class="nav-text">查看配置信息</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E5%8C%BA%E3%80%81%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C%E7%89%88%E6%9C%AC%E5%BA%93"><span class="nav-number">5.</span> <span class="nav-text">工作区、暂存区和版本库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">5.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E5%BA%93"><span class="nav-number">5.2.</span> <span class="nav-text">版本库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93"><span class="nav-number">5.2.1.</span> <span class="nav-text">新建本地仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E5%88%B6%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">5.2.2.</span> <span class="nav-text">复制远程仓库</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">6.</span> <span class="nav-text">基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-init"><span class="nav-number">6.1.</span> <span class="nav-text">git init</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8demo%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%88%9B%E5%BB%BA%E4%BA%86%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%9A%84git%E4%BB%93%E5%BA%93"><span class="nav-number">7.</span> <span class="nav-text">在demo目录下创建了一个空的git仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-clone"><span class="nav-number">7.1.</span> <span class="nav-text">git clone</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-add"><span class="nav-number">7.2.</span> <span class="nav-text">git add</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-status"><span class="nav-number">7.3.</span> <span class="nav-text">git status</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-diff"><span class="nav-number">7.4.</span> <span class="nav-text">git diff</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-commit"><span class="nav-number">7.5.</span> <span class="nav-text">git commit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-log"><span class="nav-number">7.6.</span> <span class="nav-text">git log</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-reset"><span class="nav-number">7.7.</span> <span class="nav-text">git reset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-reflog"><span class="nav-number">7.8.</span> <span class="nav-text">git reflog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-rm"><span class="nav-number">7.9.</span> <span class="nav-text">git rm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-mv"><span class="nav-number">7.10.</span> <span class="nav-text">git mv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-pull"><span class="nav-number">7.11.</span> <span class="nav-text">git pull</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-push"><span class="nav-number">7.12.</span> <span class="nav-text">git push</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86"><span class="nav-number">8.</span> <span class="nav-text">分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#branch"><span class="nav-number">8.1.</span> <span class="nav-text">branch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-checkout"><span class="nav-number">8.2.</span> <span class="nav-text">git checkout</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#merge"><span class="nav-number">8.3.</span> <span class="nav-text">merge</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mergetool"><span class="nav-number">8.4.</span> <span class="nav-text">mergetool</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-stash"><span class="nav-number">8.5.</span> <span class="nav-text">git stash</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86"><span class="nav-number">9.</span> <span class="nav-text">标签管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-tag"><span class="nav-number">9.1.</span> <span class="nav-text">git tag</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -209,16 +224,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/02/gitbasic/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -231,9 +247,9 @@
       <meta itemprop="name" content="DevilAguo0">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/02/gitbasic/" class="post-title-link" itemprop="url">Git基础教程</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Git基础教程
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -254,6 +270,13 @@
       </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -278,7 +301,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Git基础教程"><a href="#Git基础教程" class="headerlink" title="Git基础教程"></a>Git基础教程</h1><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul>
+        <h1 id="Git基础教程"><a href="#Git基础教程" class="headerlink" title="Git基础教程"></a>Git基础教程</h1><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul>
 <li>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</li>
 <li>Git 与常用的版本控制工具 CVS, SVN 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</li>
 </ul>
@@ -751,7 +774,6 @@
 <hr>
 <p>  整理文章主要为了自己日后复习用，文章中可能会引用到别的博主的文章，如涉及到博主的版权问题，请博主联系我。</p>
 
-      
     </div>
 
     
@@ -759,280 +781,42 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>DevilAguo0
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://example.com/2021/08/02/gitbasic/" title="Git基础教程">http://example.com/2021/08/02/gitbasic/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"># Git</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/08/02/nexttheme/" rel="prev" title="Hexo-Theme-NexT主题配置">
+                  <i class="fa fa-chevron-left"></i> Hexo-Theme-NexT主题配置
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/02/nexttheme/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg">
-      <meta itemprop="name" content="DevilAguo0">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DevilAguo0">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/02/nexttheme/" class="post-title-link" itemprop="url">Hexo-Theme-NexT主题配置</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-08-02 10:36:02" itemprop="dateCreated datePublished" datetime="2021-08-02T10:36:02+08:00">2021-08-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-08-02 10:52:26" itemprop="dateModified" datetime="2021-08-02T10:52:26+08:00">2021-08-02</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">博客教程</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">保姆级教程</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>5.4k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>5 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Hexo-Theme-NexT主题配置"><a href="#Hexo-Theme-NexT主题配置" class="headerlink" title="Hexo-Theme-NexT主题配置"></a>Hexo-Theme-NexT主题配置</h1><p> 2020-08-02 版本信息</p>
-<blockquote>
-<p>nodejs : v12.18.3</p>
-<p>hexo: 5.0.0<br>hexo-cli: 4.1.0</p>
-<p>NexT : <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.5">v8.0.0-rc.5</a></p>
-</blockquote>
-<h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><p><a target="_blank" rel="noopener" href="https://i.loli.net/2020/08/03/IFlo6fVkXJ8HpUv.png"><img src="https://i.loli.net/2020/08/03/IFlo6fVkXJ8HpUv.png" alt="Next主题首页截图.png"></a></p>
-<p><a target="_blank" rel="noopener" href="https://i.loli.net/2020/08/03/IFlo6fVkXJ8HpUv.png">Next主题首页截图.png</a></p>
-<p><a target="_blank" rel="noopener" href="https://i.loli.net/2020/08/03/X1WITxsLjgeuSpK.png"><img src="https://i.loli.net/2020/08/03/X1WITxsLjgeuSpK.png" alt="Next主题博客界面截图.png"></a></p>
-<p><a target="_blank" rel="noopener" href="https://i.loli.net/2020/08/03/X1WITxsLjgeuSpK.png">Next主题博客界面截图.png</a></p>
-<h1 id="获取Next"><a href="#获取Next" class="headerlink" title="获取Next"></a>获取Next</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<h1 id="站点配置文件"><a href="#站点配置文件" class="headerlink" title="站点配置文件"></a>站点配置文件</h1><p>根目录 <code>_config.yml</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-
-<h1 id="Next主题配置"><a href="#Next主题配置" class="headerlink" title="Next主题配置"></a>Next主题配置</h1><h2 id="主题配置文件"><a href="#主题配置文件" class="headerlink" title="主题配置文件"></a>主题配置文件</h2><p>将主题配置文件放在 <code>网站很目录</code> 下，命名为 <code>_config.next.yml</code> ，详情见：<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/configuration">Configuration</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp themes/next/_config.yml ./_config.next.yml</span><br></pre></td></tr></table></figure>
-
-<h2 id="选择主题风格"><a href="#选择主题风格" class="headerlink" title="选择主题风格"></a>选择主题风格</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">#scheme: Muse   #预览参考 https://theme-next.js.org/muse/</span><br><span class="line">#scheme: Mist     #预览参考 https://theme-next.js.org/mist/</span><br><span class="line">#scheme: Pisces #预览参考 https://theme-next.js.org/pisces/</span><br><span class="line">scheme: Gemini  #预览参考 https://theme-next.js.org/</span><br></pre></td></tr></table></figure>
-
-<h2 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  首页: / || fa fa-home</span><br><span class="line">  归档: /archives/ || fa fa-archive</span><br><span class="line">  分类: /categories/ || fa fa-th</span><br><span class="line">  标签: /tags/ || fa fa-tags</span><br><span class="line"></span><br><span class="line">menu_settings:</span><br><span class="line">  icons: true # 显示图标</span><br><span class="line">  badges: true # 显示统计信息</span><br></pre></td></tr></table></figure>
-
-<h3 id="添加标签页面"><a href="#添加标签页面" class="headerlink" title="添加标签页面"></a>添加标签页面</h3><p>生成编辑<code>Hexo/source/tags/index.md</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2020-07-29</span><br><span class="line">type: tags</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h3 id="添加分类页面"><a href="#添加分类页面" class="headerlink" title="添加分类页面"></a>添加分类页面</h3><p>生成编辑<code>Hexo/source/categories/index.md</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2020-07-29</span><br><span class="line">type: categories</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h2 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg #/images/avatar.gif</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: true  </span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
-
-<h2 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Favicon（网站图标）</span><br><span class="line">favicon:</span><br><span class="line">  small: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg</span><br><span class="line">  medium: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg</span><br><span class="line">  apple_touch_icon: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg</span><br><span class="line">  safari_pinned_tab: https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg</span><br><span class="line">  #android_manifest: /images/manifest.json</span><br><span class="line">  #ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
-
-<h2 id="社交链接"><a href="#社交链接" class="headerlink" title="社交链接"></a>社交链接</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https://github.com/yourname || fab fa-github</span><br><span class="line">  E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span><br><span class="line"></span><br><span class="line">social_icons:</span><br><span class="line">  enable: true      # 显示社交图标</span><br><span class="line">  icons_only: true  # 只显示图标，不显示文字</span><br><span class="line">  transition: false</span><br></pre></td></tr></table></figure>
-
-<h2 id="首页显示的文章属性"><a href="#首页显示的文章属性" class="headerlink" title="首页显示的文章属性"></a>首页显示的文章属性</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">post_meta:</span><br><span class="line">  item_text: false # 设为true 可以一行显示，文章的所有属性</span><br><span class="line">  created_at: true</span><br><span class="line">  updated_at:</span><br><span class="line">    enable: true   # 显示修改的时间</span><br><span class="line">    another_day: false # 设true时，如果创建时间和修改时间一样则显示一个时间</span><br><span class="line">  categories: true  # 显示分类信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="footer信息"><a href="#footer信息" class="headerlink" title="footer信息"></a>footer信息</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">footer:</span><br><span class="line">  # Specify the date when the site was setup. If not defined, current year will be used.</span><br><span class="line">  since: 2019</span><br><span class="line">  icon:</span><br><span class="line">    name: fa fa-user</span><br><span class="line">    animated: false</span><br><span class="line">    color: &quot;#808080&quot;</span><br><span class="line"></span><br><span class="line">  copyright: false</span><br><span class="line">  # Powered by Hexo &amp; NexT</span><br><span class="line">  powered: true</span><br></pre></td></tr></table></figure>
-
-<h2 id="目录设置"><a href="#目录设置" class="headerlink" title="目录设置"></a>目录设置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: true</span><br><span class="line">  # Automatically add list number to toc.</span><br><span class="line">  number: true</span><br><span class="line">  # 如果为true，则所有标题将在标题宽度长于边栏宽度的情况下放在下一行。</span><br><span class="line">  wrap: false</span><br><span class="line">  # 如果为true，则将显示帖子中所有级别的TOC，而不是帖子中已激活的部分。</span><br><span class="line">  expand_all: true</span><br><span class="line">  # Maximum heading depth of generated toc.</span><br><span class="line">  max_depth: 6</span><br></pre></td></tr></table></figure>
-
-<h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">reward_settings:</span><br><span class="line">  # If true, reward will be displayed in every article by default.</span><br><span class="line">  enable: true</span><br><span class="line">  animation: false  # 字体转动 鬼畜。。。。</span><br><span class="line">  #comment: Donate comment here.</span><br><span class="line"></span><br><span class="line">reward: # 打赏二维码链接</span><br><span class="line">  wechatpay: https://i.loli.net/2020/08/01/na8BbXF1ow63OIJ.png</span><br><span class="line">  alipay: https://i.loli.net/2020/08/01/NALchOTe3vM8aYy.jpg</span><br></pre></td></tr></table></figure>
-
-<h2 id="文章版权声明"><a href="#文章版权声明" class="headerlink" title="文章版权声明"></a>文章版权声明</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: true</span><br><span class="line">  post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>
-
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">codeblock:</span><br><span class="line">  # Code Highlight theme</span><br><span class="line">  # All available themes: https://theme-next.js.org/highlight/</span><br><span class="line">  theme:</span><br><span class="line">#    light: default</span><br><span class="line">#    dark: tomorrow-night</span><br><span class="line">    light: atom-one-dark-reasonable</span><br><span class="line">    dark: atom-one-dark-reasonable</span><br><span class="line">  prism:</span><br><span class="line">    # light: prism</span><br><span class="line">    # dark: prism-dark</span><br><span class="line">    light: prism-vsc-dark-plus</span><br><span class="line">    dark: prism-vsc-dark-plus</span><br><span class="line">  # Add copy button on codeblock</span><br><span class="line">  copy_button:</span><br><span class="line">    enable: true # 复制按钮的开关</span><br><span class="line">    # Available values: default | flat | mac</span><br><span class="line">    style: mac</span><br></pre></td></tr></table></figure>
-
-<h2 id="GitHub-Banner"><a href="#GitHub-Banner" class="headerlink" title="GitHub_Banner"></a>GitHub_Banner</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: # 你的GitHub地址</span><br><span class="line">  title: Follow me on GitHub</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置本地搜索"><a href="#配置本地搜索" class="headerlink" title="配置本地搜索"></a>配置本地搜索</h2><p>安装插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  # If auto, trigger search by changing input.</span><br><span class="line">  # If manual, trigger search by pressing enter key or search button.</span><br><span class="line">  trigger: auto</span><br><span class="line">  # Show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  # Unescape html strings to the readable one.</span><br><span class="line">  unescape: false</span><br><span class="line">  # Preload the search data when the page loads.</span><br><span class="line">  preload: false</span><br></pre></td></tr></table></figure>
-
-<h2 id="busuanzi统计"><a href="#busuanzi统计" class="headerlink" title="busuanzi统计"></a>busuanzi统计</h2><p>安装插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br><span class="line">busuanzi_count:</span><br><span class="line">  enable: true                     # 设true 开启</span><br><span class="line">  total_visitors: true             # 总阅读人数（uv数）</span><br><span class="line">  total_visitors_icon: fa fa-user  # 阅读总人数的图标</span><br><span class="line">  total_views: true                 # 总阅读次数（pv数）</span><br><span class="line">  total_views_icon: fa fa-eye      # 阅读总次数的图标</span><br><span class="line">  post_views: true                  # 开启内容阅读次数</span><br><span class="line">  post_views_icon: fa fa-eye       # 内容页阅读数的图标</span><br></pre></td></tr></table></figure>
-
-<h2 id="字数统计、阅读时长"><a href="#字数统计、阅读时长" class="headerlink" title="字数统计、阅读时长"></a>字数统计、阅读时长</h2><p>安装插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-word-counter --save</span><br><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-word-counter</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true # false会显示一行</span><br><span class="line">  item_text_post: true # 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字</span><br><span class="line">  item_text_total: true # 底部footer是否显示字数统计属性文字</span><br></pre></td></tr></table></figure>
-
-<h1 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h1><p>首先在 NexT 的配置文件 <code>_config.next.yml</code> 中取消下列对应样式文件的注释：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  #style: source/_data/styles.styl</span><br></pre></td></tr></table></figure>
-
-<h2 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h2><p>取消 <code>_config.next.yml</code> 中 <code>style: source/_data/styles.styl</code> 注释。</p>
-<p>创建 <code>source/_data/styles.styl</code> ：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 设置背景图片</span><br><span class="line">body &#123;</span><br><span class="line">    # 图片地址</span><br><span class="line">    background:url(https://i.loli.net/2020/08/02/pjAgE9dIcTZSCoB.jpg);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed; //不重复</span><br><span class="line">    background-size: cover;      //填充</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="设置透明度"><a href="#设置透明度" class="headerlink" title="设置透明度"></a>设置透明度</h2><p><code>source/_data/styles.styl</code> 中增加样式：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">//博客内容透明化</span><br><span class="line">//文章内容的透明度设置</span><br><span class="line">.content &#123;</span><br><span class="line">  opacity: 0.85;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边框的透明度设置</span><br><span class="line">.sidebar &#123;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//菜单栏的透明度设置</span><br><span class="line">.header-inner &#123;</span><br><span class="line">  background: rgba(255,255,255,0.85);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//搜索框（local-search）的透明度设置</span><br><span class="line">.popup &#123;</span><br><span class="line">  opacity: 0.85;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// sidebar css</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    background-color:transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="圆角设置"><a href="#圆角设置" class="headerlink" title="圆角设置"></a>圆角设置</h2><p>取消 <code>_config.next.yml</code> 中 <code>style: source/_data/variables.styl</code> 注释。</p>
-<p>创建 <code>source/_data/variables.styl</code> ：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 圆角设置</span><br><span class="line">$border-radius-inner     = 15px 15px 15px 15px;</span><br><span class="line">$border-radius       </span><br></pre></td></tr></table></figure>
-
-<p>相关文章推荐</p>
-<p>-</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://i.loli.net/2020/07/31/OZl2JxuSRrweIk5.jpg">
-      <meta itemprop="name" content="DevilAguo0">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DevilAguo0">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-08-01 22:28:45" itemprop="dateCreated datePublished" datetime="2021-08-01T22:28:45+08:00">2021-08-01</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-08-01 22:28:45" itemprop="dateModified" datetime="2021-08-01T22:28:45+08:00">2021-08-01</time>
-      </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>367</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
